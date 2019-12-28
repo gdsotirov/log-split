@@ -8,7 +8,7 @@
 # where %t is the timestamp formatted as
 #   [DD/MMM/YYYY:HH:MM:SS +ZZZZ]
 # so it's necessary to get 4th field separated by space.
-# Then year is 3rd field and month is 2nd field separated by slash or dots.
+# Then year is 3rd field and month is 2nd field separated by slash or colon.
 #
 
 BEGIN {
