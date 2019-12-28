@@ -20,3 +20,10 @@ For splitting a single error_log into files by year and month use the command:
 
 ```awk -f errlog-split-yrmt.awk error_log```
 
+For splitting a single ssl_request_log into files by year use the command:
+
+```awk -f ssllog-split-yr.awk ssl_request_log```
+
+For splitting a single ssl_request_log into files by year and month use the command:
+
+```awk -f ssllog-split-yrmt.awk ssl_request_log```
