@@ -21,7 +21,8 @@ BEGIN {
     LOG_FNAME = "error_log"
   else
     LOG_FNAME = FILENAME
-  fn = sprintf("%s-%d", LOG_FNAME, dat[5])
+  if ( dat[5] != 0 )
+    fn = sprintf("%s-%d", LOG_FNAME, dat[5])
 
   print > fn
 }

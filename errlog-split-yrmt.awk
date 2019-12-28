@@ -33,7 +33,8 @@ BEGIN {
     LOG_FNAME = "error_log"
   else
     LOG_FNAME = FILENAME
-  fn = sprintf("%s-%d%02d", LOG_FNAME, dat[5], months[dat[2]])
+  if ( dat[5] != 0 && dat[2] != 0 )
+    fn = sprintf("%s-%d%02d", LOG_FNAME, dat[5], months[dat[2]])
 
   print > fn
 }
