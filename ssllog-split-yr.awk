@@ -14,7 +14,7 @@
 {
   split($1, dat, "[/:]");
   if ( FILENAME == "-" )
-    LOG_FNAME = "error_log"
+    LOG_FNAME = "ssl_request_log"
   else
     LOG_FNAME = FILENAME
   fn = sprintf("%s-%d", LOG_FNAME, dat[3])
