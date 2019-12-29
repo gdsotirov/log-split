@@ -67,6 +67,17 @@ the command:
 
 ```awk -f snmpd-split-yrmt.awk snmpd.log```
 
+## ISC Bind NAMED
+
+For splitting a single `named.log` into files by year use the command:
+
+```awk -f named-split-yr.awk named.log```
+
+For splitting a single `named.log` into files by year and month use
+the command:
+
+```awk -f named-split-yrmt.awk named.log```
+
 # Performance
 
 Splitting a large file (e.g. several GB or TB) could take **significant**
