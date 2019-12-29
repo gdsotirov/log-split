@@ -37,12 +37,13 @@ the command:
 
 ## ProFTPD FTPD
 
-For splitting a single `proftpd.log` into files by year use the command:
+For splitting a single `proftpd.log` or `tls.log` into files by year use
+the command:
 
 ```awk -f ftpd-split-yr.awk proftpd.log```
 
-For splitting a single `proftpd.log` into files by year and month use
-the command:
+For splitting a single `proftpd.log` or `tls.log` into files by year and
+month use the command:
 
 ```awk -f ftpd-split-yrmt.awk proftpd.log```
 
