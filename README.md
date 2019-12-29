@@ -46,6 +46,15 @@ the command:
 
 ```awk -f ftpd-split-yrmt.awk proftpd.log```
 
+For splitting a single `xferlog` into files by year use the command:
+
+```awk -f xferlog-split-yr.awk xferlog```
+
+For splitting a single `xferlog` into files by year and month use
+the command:
+
+```awk -f xferlog-split-yrmt.awk xferlog```
+
 ## Net-SNMP SNMPD
 
 For splitting a single `snmpd.log` into files by year use the command:
