@@ -35,6 +35,17 @@ the command:
 
 ```awk -f ssllog-split-yrmt.awk ssl_request_log```
 
+## ProFTPD FTPD
+
+For splitting a single `proftpd.log` into files by year use the command:
+
+```awk -f ftpd-split-yr.awk proftpd.log```
+
+For splitting a single `proftpd.log` into files by year and month use
+the command:
+
+```awk -f ftpd-split-yrmt.awk proftpd.log```
+
 ## Net-SNMP SNMPD
 
 For splitting a single `snmpd.log` into files by year use the command:
