@@ -78,6 +78,17 @@ the command:
 
 ```awk -f named-split-yrmt.awk named.log```
 
+## Cacti
+
+For splitting a single `cacti.log` into files by year use the command:
+
+```awk -f cacti-split-yr.awk cacti.log```
+
+For splitting a single `cacti.log` into files by year and month use
+the command:
+
+```awk -f cacti-split-yrmt.awk cacti.log```
+
 # Performance
 
 Splitting a large file (e.g. several GB or TB) could take **significant**
