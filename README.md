@@ -89,6 +89,17 @@ the command:
 
 ```awk -f xferlog-split-yrmt.awk xferlog```
 
+## Samba
+
+For splitting a single `samba.log` into files by year use the command:
+
+```awk -f samba-split-yr.awk samba.log```
+
+For splitting a single `samba.log` into files by year and month use
+the command:
+
+```awk -f samba-split-yrmt.awk samba.log```
+
 ## Rsync
 
 For splitting a single `rsync.log` into files by year use the command:
