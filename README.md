@@ -89,6 +89,17 @@ the command:
 
 ```awk -f cacti-split-yrmt.awk cacti.log```
 
+## Rsync
+
+For splitting a single `rsync.log` into files by year use the command:
+
+```awk -f rsync-split-yr.awk rsync.log```
+
+For splitting a single `rsync.log` into files by year and month use
+the command:
+
+```awk -f rsync-split-yrmt.awk rsync.log```
+
 # Performance
 
 Splitting a large file (e.g. several GB or TB) could take **significant**
