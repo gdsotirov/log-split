@@ -15,8 +15,10 @@
     LOG_FNAME = "rsync.log"
   else
     LOG_FNAME = FILENAME
-  fn = sprintf("%s-%d", LOG_FNAME, dat[1])
+  if ( dat[1] > pryr )
+    fn = sprintf("%s-%d", LOG_FNAME, dat[1])
 
   print > fn
+  pryr = dat[1]
 }
 
