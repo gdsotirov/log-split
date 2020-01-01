@@ -35,6 +35,39 @@ the command:
 
 ```awk -f ssllog-split-yrmt.awk ssl_request_log```
 
+## Cacti
+
+For splitting a single `cacti.log` into files by year use the command:
+
+```awk -f cacti-split-yr.awk cacti.log```
+
+For splitting a single `cacti.log` into files by year and month use
+the command:
+
+```awk -f cacti-split-yrmt.awk cacti.log```
+
+## ISC Bind NAMED
+
+For splitting a single `named.log` into files by year use the command:
+
+```awk -f named-split-yr.awk named.log```
+
+For splitting a single `named.log` into files by year and month use
+the command:
+
+```awk -f named-split-yrmt.awk named.log```
+
+## Net-SNMP SNMPD
+
+For splitting a single `snmpd.log` into files by year use the command:
+
+```awk -f snmpd-split-yr.awk snmpd.log```
+
+For splitting a single `snmpd.log` into files by year and month use
+the command:
+
+```awk -f snmpd-split-yrmt.awk snmpd.log```
+
 ## ProFTPD FTPD
 
 For splitting a single `proftpd.log` or `tls.log` into files by year use
@@ -55,39 +88,6 @@ For splitting a single `xferlog` into files by year and month use
 the command:
 
 ```awk -f xferlog-split-yrmt.awk xferlog```
-
-## Net-SNMP SNMPD
-
-For splitting a single `snmpd.log` into files by year use the command:
-
-```awk -f snmpd-split-yr.awk snmpd.log```
-
-For splitting a single `snmpd.log` into files by year and month use
-the command:
-
-```awk -f snmpd-split-yrmt.awk snmpd.log```
-
-## ISC Bind NAMED
-
-For splitting a single `named.log` into files by year use the command:
-
-```awk -f named-split-yr.awk named.log```
-
-For splitting a single `named.log` into files by year and month use
-the command:
-
-```awk -f named-split-yrmt.awk named.log```
-
-## Cacti
-
-For splitting a single `cacti.log` into files by year use the command:
-
-```awk -f cacti-split-yr.awk cacti.log```
-
-For splitting a single `cacti.log` into files by year and month use
-the command:
-
-```awk -f cacti-split-yrmt.awk cacti.log```
 
 ## Rsync
 
