@@ -17,7 +17,7 @@
 /^[0-9]{2}\/[0-9]{2}\/[0-9]{4} [0-9]{2}:[0-9]{2}:[0-9]{2} (AM|PM)?/ {
   split($1, dat, "/");
   if ( FILENAME == "-" )
-    LOG_FNAME = "access_log"
+    LOG_FNAME = "cacti.log"
   else
     LOG_FNAME = FILENAME
   fn = sprintf("%s-%d%02d", LOG_FNAME, dat[3], dat[2])
@@ -26,7 +26,7 @@
 /^[0-9]{4}\-[0-9]{2}\-[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}/ {
   split($1, dat, "-");
   if ( FILENAME == "-" )
-    LOG_FNAME = "access_log"
+    LOG_FNAME = "cacti.log"
   else
     LOG_FNAME = FILENAME
   fn = sprintf("%s-%d%02d", LOG_FNAME, dat[1], dat[2])
@@ -35,7 +35,7 @@
 /^[0-9]{4}\/[0-9]{2}\/[0-9]{2} [0-9]{2}:[0-9]{2}:[0-9]{2}/ {
   split($1, dat, "/");
   if ( FILENAME == "-" )
-    LOG_FNAME = "access_log"
+    LOG_FNAME = "cacti.log"
   else
     LOG_FNAME = FILENAME
   fn = sprintf("%s-%d%02d", LOG_FNAME, dat[1], dat[2])
